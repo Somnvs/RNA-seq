@@ -2,6 +2,7 @@
 plot methods
 
 ## running example
+The script is in the script path, and the file used is in the example _ file path
 ### heatmap
 `Rscript heatmap.r KOVSWT.All.txt KOVSWT true pvalue 1 0.05 red blue white 0.01 10 45 7 7 2 T F 0`
 
