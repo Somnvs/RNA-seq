@@ -57,7 +57,8 @@ example table:
 ![image](https://user-images.githubusercontent.com/26337757/207041703-7e7f6aa9-ba43-40ea-b46f-111ff5d9101e.png)
 
 ### GO_KEGG enrichment barplot
-```resultDir="./"
+```
+resultDir="./"
 bash runBarPlotAll.sh \
 $resultDir \
 barplot.r \
