@@ -47,7 +47,7 @@ bash runGeneEnrichment.sh \
 $resultDir \
 geneEnrichment.r \
 H_3VSC_3.log2FC1.Pvalue0.05.txt \
-/Data2/nbCloud/public/taskdatabase/rainbow_database/Annotation/mm10_gencode_ensembl_kegg/Annotation.xls \
+mm10_Annotation.xls \
 H_3VSC_3 \
 2 \
 true \
