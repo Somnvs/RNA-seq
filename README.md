@@ -38,3 +38,52 @@ do
        -set_min 15 -zip_report false -out ./ -gui false
 done
 ```
+
+### GO KEGG
+# get enrichment table
+```
+resultDir="./"
+bash runGeneEnrichment.sh \
+$resultDir \
+geneEnrichment.r \
+H_3VSC_3.log2FC1.Pvalue0.05.txt \
+/Data2/nbCloud/public/taskdatabase/rainbow_database/Annotation/mm10_gencode_ensembl_kegg/Annotation.xls \
+H_3VSC_3 \
+2 \
+true \
+geneName
+```
+![image](https://user-images.githubusercontent.com/26337757/207041703-7e7f6aa9-ba43-40ea-b46f-111ff5d9101e.png)
+
+# GO_KEGG enrichment barplot
+```resultDir="./"
+bash runBarPlotAll.sh \
+$resultDir \
+barplot.r \
+H_3VSC_3.up_GO_BP.enrichment.xls,H_3VSC_3.all_GO_BP.enrichment.xls,H_3VSC_3.down_GO_BP.enrichment.xls,H_3VSC_3.down_Pathway.enrichment.xls,H_3VSC_3.up_Pathway.enrichment.xls,H_3VSC_3.all_Pathway.enrichment.xls \
+H_3VSC_3,H_3VSC_3,H_3VSC_3,H_3VSC_3,H_3VSC_3,H_3VSC_3 \
+enrichmentPlot.r \
+8 \
+7 \
+20 \
+40 \
+60 \
+Pvalue \
+14 \
+0.5 \
+12 \
+11 \
+11 \
+0.05 \
+runBarPlot.sh
+
+```
+![image](https://user-images.githubusercontent.com/26337757/207041912-c59adec0-09c4-4223-9f55-f58e424001ab.png)
+
+![image](https://user-images.githubusercontent.com/26337757/207041931-da93a98f-50bc-4528-8428-3d805a64dc0e.png)
+
+![image](https://user-images.githubusercontent.com/26337757/207041949-c8e1e034-1b05-44fb-8262-79822405c0a5.png)
+
+
+
+
